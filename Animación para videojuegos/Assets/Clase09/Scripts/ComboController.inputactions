@@ -1,0 +1,54 @@
+{
+    "name": "ComboController",
+    "maps": [
+        {
+            "name": "Character JRPG",
+            "id": "57fff6ce-aa53-43de-ad5c-516fd944326a",
+            "actions": [
+                {
+                    "name": "Heavy attack",
+                    "type": "Button",
+                    "id": "907d2220-24d1-4da0-962f-2b2a7bf9301c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Light attack",
+                    "type": "Button",
+                    "id": "a80693dc-8ecd-48be-ae7e-301b11f257f8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "dcb41ae1-692c-4655-b153-f9b62550e7b8",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heavy attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6ce6da9-474c-4b9d-8aad-927c085f4730",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Light attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
