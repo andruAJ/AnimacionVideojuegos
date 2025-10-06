@@ -3606,7 +3606,7 @@ PrefabInstance:
       addedObject: {fileID: 1994969587}
     - targetCorrespondingSourceObject: {fileID: 100110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1994969590}
+      addedObject: {fileID: 1994969588}
   m_SourcePrefab: {fileID: 100100000, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
 --- !u!4 &1994969580 stripped
 Transform:
@@ -3818,7 +3818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitBoxes: []
---- !u!895512359 &1994969590
+--- !u!895512359 &1994969588
 AimConstraint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3828,8 +3828,8 @@ AimConstraint:
   m_Enabled: 1
   serializedVersion: 2
   m_Weight: 1
-  m_RotationAtRest: {x: -0, y: 0, z: 0}
-  m_RotationOffset: {x: 41.40771, y: 0, z: 0}
+  m_RotationAtRest: {x: 0.00064372976, y: -0, z: -0}
+  m_RotationOffset: {x: 25.149921, y: 0, z: 0}
   m_AimVector: {x: 0, y: 0, z: 1}
   m_UpVector: {x: 0, y: 1, z: 0}
   m_WorldUpVector: {x: 0, y: 1, z: 0}
@@ -3838,8 +3838,8 @@ AimConstraint:
   m_AffectRotationX: 1
   m_AffectRotationY: 1
   m_AffectRotationZ: 1
-  m_Active: 0
-  m_IsLocked: 1
+  m_Active: 1
+  m_IsLocked: 0
   m_Sources:
   - sourceTransform: {fileID: 1050720107}
     weight: 1
