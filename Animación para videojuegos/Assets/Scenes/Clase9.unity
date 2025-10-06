@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228655696}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.46685904, y: 0.53107697, z: -0.46685913, w: 0.5310768}
-  m_LocalPosition: {x: -0.000000008201064, y: 1.0755656, z: 0.008958154}
+  m_LocalRotation: {x: -0.46685913, y: 0.53107685, z: -0.46685922, w: 0.53107667}
+  m_LocalPosition: {x: -0.000000008201064, y: 1.0755656, z: 0.008957952}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -625,8 +625,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442617319}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.48154277, y: 0.49534217, z: -0.51190734, w: 0.5105914}
-  m_LocalPosition: {x: -0.10458706, y: 0.07069296, z: -0.04688604}
+  m_LocalRotation: {x: -0.48154283, y: 0.49534208, z: -0.5119074, w: 0.5105913}
+  m_LocalPosition: {x: -0.10458706, y: 0.07069295, z: -0.046886057}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -913,23 +913,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.07294348
+      value: -0.07294374
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6999627
+      value: 0.69996274
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.21297748
+      value: -0.21297756
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2180214
+      value: 0.21802123
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6458789
+      value: -0.64587885
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf3739b4d53347c4ab88bad4e567aafa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1276,7 +1276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875214597}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000057112325, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0.000005617605, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1466,7 +1466,7 @@ Transform:
   m_GameObject: {fileID: 900166344}
   serializedVersion: 2
   m_LocalRotation: {x: -0.46527103, y: 0.5029513, z: -0.48270154, w: 0.5454925}
-  m_LocalPosition: {x: -0.115519375, y: 0.5197755, z: -0.0011529756}
+  m_LocalPosition: {x: -0.115519375, y: 0.5197755, z: -0.0011530729}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1861,8 +1861,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050720106}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0000057112325, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.0899742, z: 2.3700225}
+  m_LocalRotation: {x: 0.000005523979, y: 0.00000009362675, z: -5.171922e-13, w: 1}
+  m_LocalPosition: {x: 0.00000044379487, y: 2.089975, z: 2.3700218}
   m_LocalScale: {x: 0.17268, y: 0.17268, z: 0.17268}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2182,8 +2182,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213721193}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5105915, y: 0.51190734, z: 0.49534217, w: 0.48154268}
-  m_LocalPosition: {x: 0.104377925, y: 0.07069123, z: -0.04688389}
+  m_LocalRotation: {x: 0.51059145, y: 0.5119074, z: 0.49534214, w: 0.48154274}
+  m_LocalPosition: {x: 0.104377925, y: 0.07069122, z: -0.046883903}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2396,7 +2396,7 @@ Transform:
   m_GameObject: {fileID: 1419665759}
   serializedVersion: 2
   m_LocalRotation: {x: 0.54654825, y: 0.48367798, z: 0.5018042, w: 0.4642556}
-  m_LocalPosition: {x: 0.11551955, y: 0.5197751, z: -0.0011531321}
+  m_LocalPosition: {x: 0.11551955, y: 0.5197751, z: -0.0011532294}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2593,7 +2593,7 @@ Transform:
   m_GameObject: {fileID: 1696312071}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5359465, y: 0.54112166, z: 0.46770483, w: 0.44855434}
-  m_LocalPosition: {x: 0.1069683, y: 0.9530003, z: 0.005270678}
+  m_LocalPosition: {x: 0.1069683, y: 0.9530003, z: 0.0052704993}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2882,8 +2882,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743015497}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.59582716, y: 0.3807755, z: -0.59582764, w: 0.38077486}
-  m_LocalPosition: {x: -0.0000000058276086, y: 1.5908698, z: -0.046833877}
+  m_LocalRotation: {x: -0.5958272, y: 0.38077542, z: -0.5958276, w: 0.3807749}
+  m_LocalPosition: {x: -0.0000000058276086, y: 1.5908698, z: -0.046834175}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3047,8 +3047,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923776667}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4496905, y: 0.46882984, z: -0.5401779, w: 0.53496253}
-  m_LocalPosition: {x: -0.106968366, y: 0.95299846, z: 0.0052705887}
+  m_LocalRotation: {x: -0.4496906, y: 0.46882975, z: -0.540178, w: 0.5349625}
+  m_LocalPosition: {x: -0.106968366, y: 0.95299846, z: 0.00527041}
   m_LocalScale: {x: 0.27, y: 0.27, z: 0.27}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3323,7 +3323,7 @@ Transform:
   m_GameObject: {fileID: 1970231471}
   serializedVersion: 2
   m_LocalRotation: {x: -0.53960353, y: 0.45697704, z: -0.53960353, w: 0.45697704}
-  m_LocalPosition: {x: -0.00000004595168, y: 1.3561208, z: -0.02155029}
+  m_LocalPosition: {x: -0.00000004595168, y: 1.3561208, z: -0.021550544}
   m_LocalScale: {x: 0.34, y: 0.34, z: 0.34}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3555,7 +3555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000057112325
+      value: 0.000005617605
       objectReference: {fileID: 0}
     - target: {fileID: 400110, guid: 43992d4f16e57574fa5d16ef485c0cbd, type: 3}
       propertyPath: m_LocalRotation.y
@@ -3723,9 +3723,57 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: fcc9482c-0bfa-441d-9cfc-d8d0bd038294
     m_ActionName: 'Character JRPG/RotatePlayer[/Keyboard/e,/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1994969585}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: RotatePlayer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cb413d94-6318-4ee7-8e40-ec414fc92b86
+    m_ActionName: 'GamePad/RotatePlayer[/XInputControllerWindows/rightStick/left,/XInputControllerWindows/rightStick/right]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1994969585}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: OnLightAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8eb9f25a-6e25-4cc7-b164-09ace42734fe
+    m_ActionName: 'GamePad/Light attack[/XInputControllerWindows/rightShoulder]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1994969585}
+        m_TargetAssemblyTypeName: AttackController, Assembly-CSharp
+        m_MethodName: OnHeavyAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ac0c7381-aab9-4e04-85e2-c7a26cceb974
+    m_ActionName: 'GamePad/Heavy attack[/XInputControllerWindows/rightTrigger]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Character JRPG
+  m_DefaultActionMap: GamePad
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 1702311050}
 --- !u!114 &1994969585
@@ -3743,6 +3791,7 @@ MonoBehaviour:
   character: {fileID: 430110551}
   lightCost: 1.5
   heavyCost: 3
+  rotationSpeed: 200
 --- !u!114 &1994969586
 MonoBehaviour:
   m_ObjectHideFlags: 0

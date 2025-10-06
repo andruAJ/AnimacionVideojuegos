@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,8 @@ public class AttackController : MonoBehaviour
     [SerializeField] private Transform character;
     [SerializeField] private float lightCost = 1.5f;
     [SerializeField] private float heavyCost = 3.5f;
+    [SerializeField] private float rotationSpeed = 500f;
+    private float rotateInput;
     private Animator animator;
     private AttackHitboxController hitboxController;
     private void Awake() 
@@ -41,17 +44,18 @@ public class AttackController : MonoBehaviour
 
     }
 
-
     public void RotatePlayer(InputAction.CallbackContext ctx) {
-        if (ctx.performed || ctx.canceled) {
-            Vector3 rotationVector = new(0, 0, 0) {
-                y = ctx.ReadValue<float>()
-            };
-
-            float rotationSpeed = 500f;
-            character.eulerAngles += rotationVector * (rotationSpeed * Time.deltaTime);
+        if (ctx.performed) {
+            rotateInput = ctx.ReadValue<float>();
+        } else if (ctx.canceled) {
+            rotateInput = 0f;
         }
         
+    }
+
+    private void Update() {
+        if (MathF.Abs(rotateInput) > 0.001f)
+            character.Rotate(0f, rotateInput * rotationSpeed * Time.deltaTime, 0f);
     }
 
     private void DepleteStamina(float value) 

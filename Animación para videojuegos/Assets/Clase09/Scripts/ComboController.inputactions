@@ -154,6 +154,96 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "GamePad",
+            "id": "0e156e94-f827-4cd3-bed5-f32ac7d9eb76",
+            "actions": [
+                {
+                    "name": "RotatePlayer",
+                    "type": "Value",
+                    "id": "cb413d94-6318-4ee7-8e40-ec414fc92b86",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Light attack",
+                    "type": "Button",
+                    "id": "8eb9f25a-6e25-4cc7-b164-09ace42734fe",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Heavy attack",
+                    "type": "Button",
+                    "id": "ac0c7381-aab9-4e04-85e2-c7a26cceb974",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "af2a89dd-ea4b-48c2-8304-965a2f1eb824",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotatePlayer",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "b0c6156a-27d0-4883-9007-37ca92c683f8",
+                    "path": "<Gamepad>/rightStick/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotatePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "fbabbda3-22a1-44b9-9ad9-a79c372cd525",
+                    "path": "<Gamepad>/rightStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RotatePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "27f3b76b-da50-4779-8118-3bdab5f3d01b",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Light attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ecede17-0751-4eee-93e1-e74a85247526",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heavy attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
