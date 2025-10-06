@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Animator))]
 public class AttackController : MonoBehaviour
 {
+    [SerializeField] private Transform character;
     [SerializeField] private float lightCost = 1.5f;
     [SerializeField] private float heavyCost = 3.5f;
     private Animator animator;
@@ -38,6 +39,19 @@ public class AttackController : MonoBehaviour
 
         //}
 
+    }
+
+
+    public void RotatePlayer(InputAction.CallbackContext ctx) {
+        if (ctx.performed || ctx.canceled) {
+            Vector3 rotationVector = new(0, 0, 0) {
+                y = ctx.ReadValue<float>()
+            };
+
+            float rotationSpeed = 500f;
+            character.eulerAngles += rotationVector * (rotationSpeed * Time.deltaTime);
+        }
+        
     }
 
     private void DepleteStamina(float value) 
