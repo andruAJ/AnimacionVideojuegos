@@ -16,7 +16,6 @@ Implementación de un sistema de **combos direccionales** que responde a la orie
 - Encadenado dependiente de ventanas de tiempo
 - Respeto por las curvas de desplazamiento en cada eslabón para no “teletransportarse” al salir de ventana
 - Deadzone para evitar jitter
-- Histéresis o criterio similar para cambios de dirección rápidos
 - Criterios de diseño claros: deadzone, histéresis, buffers y resolución de conflictos
 - Sin regresiones: nada de soft-locks, bucles infinitos o pérdida de control
 
@@ -46,7 +45,7 @@ Implementación de un sistema de **combos direccionales** que responde a la orie
 - **`AttackController.cs`**  
   Orquesta entradas de ataque, ventanas de encadenado y el enrutamiento por dirección actual. Expone callbacks de Input System como `OnLightAttack`, `OnHeavyAttack`, `AttackDirection`, `RotatePlayer`.
 
-- **`ComboStateMachine`** (o equivalente)  
+- **`ComboLogic`** (o equivalente)  
   Representa el eslabón actual del combo, sus salidas y la ventana de encadenado. Mantiene timers de buffer y reglas de prioridad.
 
 - **`DirectionReader`**  
