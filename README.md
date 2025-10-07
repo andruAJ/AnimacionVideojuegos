@@ -43,7 +43,7 @@ Implementación de un sistema de **combos direccionales** que responde a la orie
 > Nombres de scripts pensados para esta clase. Ajusta si tus archivos difieren.
 
 - **`AttackController.cs`**  
-  Orquesta entradas de ataque, ventanas de encadenado y el enrutamiento por dirección actual. Expone callbacks de Input System como `OnLightAttack`, `OnHeavyAttack`, `AttackDirection`, `RotatePlayer`.
+  Orquesta entradas de ataque, ventanas de encadenado y el enrutamiento por dirección actual. Expone callbacks de Input System como `OnLightAttack`, `OnHeavyAttack`, `RotatePlayer`.
 
 - **`ComboLogic`** 
   Representa el eslabón actual del combo, sus salidas y la ventana de encadenado. Mantiene timers de buffer y reglas de prioridad.
