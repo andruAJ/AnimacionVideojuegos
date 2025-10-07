@@ -9,6 +9,7 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float lightCost = 1.5f;
     [SerializeField] private float heavyCost = 3.5f;
     [SerializeField] private float rotationSpeed = 500f;
+    [SerializeField] private float deadZone = 0.2f;
     private float rotateInput;
     private Animator animator;
     private AttackHitboxController hitboxController;
@@ -54,7 +55,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update() {
-        if (MathF.Abs(rotateInput) > 0.001f)
+        if (MathF.Abs(rotateInput) > deadZone)
             character.Rotate(0f, rotateInput * rotationSpeed * Time.deltaTime, 0f);
     }
 

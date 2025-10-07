@@ -3793,7 +3793,7 @@ MonoBehaviour:
   character: {fileID: 1994969581}
   lightCost: 1.5
   heavyCost: 3
-  rotationSpeed: 200
+  rotationSpeed: 300
 --- !u!114 &1994969586
 MonoBehaviour:
   m_ObjectHideFlags: 0
