@@ -55,9 +55,6 @@ Implementación de un sistema de **combos direccionales** que responde a la orie
 - **`Animator`**  
   Un árbol con capas o submáquinas por **tipo de ataque** y **variantes direccionales**. Cada clip define eventos que abren y cierran ventanas de encadenado.
 
-- **`RotateController`** (si lo separas)  
-  Aplica la rotación continua por frame a partir del eje `RotatePlayer` leído de Input System.
-
 ### Lectura continua del eje de rotación
 
 Ejemplo mínimo para mantener rotación mientras la tecla o stick siga presionado:
