@@ -1,22 +1,17 @@
-# Clase 09 - Controlador ARPG con combos direccionales
+# Entrega3 - Controlador ARPG con combos direccionales
 
 Implementación de un sistema de **combos direccionales** que responde a la orientación del joystick y a secuencias de entrada, respetando ventanas de encadenado y criterios de suavidad.
 
 ## Demo
-Coloca aquí un GIF o video corto que muestre:
-- Cambios de dirección durante ataques
-- Encadenados correctos
-- Intentos dentro y fuera de tiempo
 
-Sugerido: `Docs/demo-clase09.gif`
-
----
+## ![](gifCombos.gif)
 
 ## Objetivo y alcance
 
 **Objetivo.** Construir un sistema de combos direccionales completo donde cada eslabón del combo depende de la dirección actual del stick y de secuencias direccionales, coexistiendo con las ventanas de encadenado.
 
 **Alcance mínimo.**
+
 - Direccionalidad para todos los ataques controlada por joystick
 - Encadenado dependiente de ventanas de tiempo
 - Respeto por las curvas de desplazamiento en cada eslabón para no “teletransportarse” al salir de ventana
@@ -25,26 +20,22 @@ Sugerido: `Docs/demo-clase09.gif`
 - Criterios de diseño claros: deadzone, histéresis, buffers y resolución de conflictos
 - Sin regresiones: nada de soft-locks, bucles infinitos o pérdida de control
 
-Fuente del enunciado y rúbrica: :contentReference[oaicite:0]{index=0}
-
 ---
 
 ## Controles
 
-### Teclado
-- **Movimiento direccional**: WASD o flechas (según tu Input Actions)
-- **Light Attack**: asignar a `J` o `Mouse0`
-- **Heavy Attack**: asignar a `K` o `Mouse1`
-- **Rotación libre**: `Q` (gira a la izquierda) y `E` (gira a la derecha), lectura de eje 1D
-
 ### Gamepad
-- **Dirección**: `leftStick` o `dpad`
-- **Orientación direccional para ataques**: `rightStick` (eje X e Y)
-- **Light Attack**: `buttonSouth` (A en Xbox, X en PlayStation)
-- **Heavy Attack**: `buttonEast` (B en Xbox, O en PlayStation)
-- **Rotación continua**: `rightStick/x` mapeado a la misma acción de rotación
 
-> Recomendado: agregar **Processor Deadzone** en los sticks, por ejemplo 0.2 inicial, y ajustar tras pruebas.
+- **Light Attack**: `RB`
+- **Heavy Attack**: `RT`
+- **Rotación libre**: `Joystick derecho`
+
+### Teclado
+
+- **Orientación direccional para ataques**: `rightStick` (eje X e Y)
+- **Light Attack**: (Mouse 0)
+- **Heavy Attack**: (Mouse 1)
+- **Rotación continua**: `Q` (gira a la izquierda) y `E` (gira a la derecha)
 
 ---
 
@@ -68,7 +59,9 @@ Fuente del enunciado y rúbrica: :contentReference[oaicite:0]{index=0}
   Aplica la rotación continua por frame a partir del eje `RotatePlayer` leído de Input System.
 
 ### Lectura continua del eje de rotación
+
 Ejemplo mínimo para mantener rotación mientras la tecla o stick siga presionado:
+
 ```csharp
 [SerializeField] Transform character;
 [SerializeField] float rotationSpeed = 500f;
@@ -82,3 +75,4 @@ void Update() {
     if (Mathf.Abs(input) > 0.001f)
         character.Rotate(0f, input * rotationSpeed * Time.deltaTime, 0f, Space.Self);
 }
+```
