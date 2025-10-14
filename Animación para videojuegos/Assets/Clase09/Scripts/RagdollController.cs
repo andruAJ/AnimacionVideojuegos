@@ -1,10 +1,11 @@
+using System.Linq;
 using UnityEngine;
 
 public class RagdollController : MonoBehaviour
 {
      
     [SerializeField] Animator animator;
-    [SerializeField] rigidbody rb;
+    [SerializeField] Rigidbody rb;
     [SerializeField] Collider rootCollider;
     [SerializeField] Transform hips;
     private Rigidbody[] ragdollRigidbodies;
@@ -25,8 +26,8 @@ public class RagdollController : MonoBehaviour
             rb = GetComponent<Rigidbody>();
         }
 
-        var AllRigidbodies: Rigidboy[] = hips.GetComponentsInChildren<Rigidbody>(includeInactive: true);
-        ragdollRigidbodies = AllRigidbodies.Where(r => r != rb).ToArray();
+        var allRigidbodies: Rigidbody[] = hips.GetComponentsInChildren<Rigidbody>(includeInactive: true);
+        ragdollRigidbodies = allRigidbodies.Where(r => r != rb).ToArray();
         ragdollColliders = hips.GetComponentsInChildren<Collider>(includeInactive: true).Where(c => c != rootCollider).ToArray();
 
         SetAnimateState(true);
@@ -40,8 +41,8 @@ public class RagdollController : MonoBehaviour
         {
             r.isKinematic = state;
             r.detectCollisions = !state;
-            r.LinearVelocity = Vector3.zero;
-            r.AngularVelocity = Vector3.zero;
+            r.linearVelocity = Vector3.zero;
+            r.angularVelocity = Vector3.zero;
         }
         foreach (var c in ragdollColliders) 
         {
@@ -80,7 +81,7 @@ public class RagdollController : MonoBehaviour
     {
         if (!isRagdoll) return;
         SetAnimateState(true);
-        if hips != null 
+        if (hips != null)
         {
             transform.position = hips.position;
         }
