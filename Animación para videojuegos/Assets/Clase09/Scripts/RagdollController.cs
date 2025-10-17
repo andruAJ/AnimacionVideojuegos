@@ -5,9 +5,9 @@ public class RagdollController : MonoBehaviour
 {
      
     [SerializeField] Animator animator;
-    [SerializeField] Rigidbody rb;
-    [SerializeField] Collider rootCollider;
-    [SerializeField] Transform hips;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Collider rootCollider;
+    [SerializeField] private Transform hips;
     private Rigidbody[] ragdollRigidbodies;
     private Collider[] ragdollColliders;
 
@@ -15,19 +15,21 @@ public class RagdollController : MonoBehaviour
 
     private void Awake() 
     {
-        //ragdollRigidbodies = hips.GetComponentsInChildren<Rigidbody>();
-        //ragdollColliders = hips.GetComponentsInChildren<Collider>();
         if (animator == null) 
         {
             animator = GetComponent<Animator>();
         }
         if (rb == null) 
         {
-            rb = GetComponent<Rigidbody>();
+            rb = GetComponentInParent<Rigidbody>();
+        }
+        if (rootCollider == null) 
+        {
+            rootCollider = GetComponent<Collider>();
         }
 
-        //var allRigidbodies: Rigidbody[] = hips.GetComponentsInChildren<Rigidbody>(includeInactive: true);
-        //ragdollRigidbodies = allRigidbodies.Where(r => r != rb).ToArray();
+        Rigidbody[] allRigidbodies = GetComponentsInChildren<Rigidbody>(includeInactive: true);
+        ragdollRigidbodies = allRigidbodies.Where(r => r != rb).ToArray();
         ragdollColliders = hips.GetComponentsInChildren<Collider>(includeInactive: true).Where(c => c != rootCollider).ToArray();
 
         SetAnimateState(true);
@@ -77,7 +79,7 @@ public class RagdollController : MonoBehaviour
         Physics.SyncTransforms();
     }
 
-    public void DisableRagdoll() 
+    public void DisableRagdollAndRevive() 
     {
         if (!isRagdoll) return;
         SetAnimateState(true);

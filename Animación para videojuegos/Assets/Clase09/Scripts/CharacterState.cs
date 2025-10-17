@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class CharacterState : MonoBehaviour
 {
-    [SerializeField] private float _startStamina = 1000;
-    [SerializeField] private float _staminaRegen = 1;
-    [SerializeField] private float _currentStamina = 1000;
-    [SerializeField] private float _startHealth = 100;
-    [SerializeField] private float _currentHealth = 100;
+    [SerializeField] public float _startStamina = 1000;
+    [SerializeField] public float _staminaRegen = 1;
+    [SerializeField] public float _currentStamina = 1000;
+    [SerializeField] public float _startHealth = 100;
+    [SerializeField] public float _currentHealth = 100;
 
     public float CurrentStamine => _currentStamina;
 
