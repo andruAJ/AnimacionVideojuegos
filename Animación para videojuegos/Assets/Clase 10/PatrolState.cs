@@ -2,14 +2,15 @@ using UnityEngine;
 
 public class PatrolState : State
 {
-    public PatrolState(EnemyAI enemy) : base(enemy)
+    public PatrolState(EnemyAI enemy): base(enemy)
     {
        
     }
     public override void Enter()
     {
         enemy.agent.isStopped = false;
-        enemy.Next
+        enemy.NextWaypoint();
+        enemy.agent.speed = enemy.walkSpeed;
     }
     public override void Update()
     {

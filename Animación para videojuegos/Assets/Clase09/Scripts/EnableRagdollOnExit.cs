@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Animations;
 
 
 public class EnableRagdollOnExit : StateMachineBehaviour
 {
     private bool fired;
-    publicvoid OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         fired = false;
     }

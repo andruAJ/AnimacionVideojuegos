@@ -2,13 +2,15 @@ using UnityEngine;
 
 public class ChaseState : State
 {
-    public PatrolState(EnemyAI enemy) : base(enemy)
+    public ChaseState(EnemyAI enemy): base(enemy)
     {
 
     }
     public override void Enter()
     {
         enemy.agent.isStopped = false;
+        enemy.agent.speed = enemy.runSpeed;
+
     }
     public override void Update()
     {

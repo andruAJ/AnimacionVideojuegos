@@ -26,14 +26,14 @@ public class RagdollController : MonoBehaviour
             rb = GetComponent<Rigidbody>();
         }
 
-        var allRigidbodies: Rigidbody[] = hips.GetComponentsInChildren<Rigidbody>(includeInactive: true);
-        ragdollRigidbodies = allRigidbodies.Where(r => r != rb).ToArray();
+        //var allRigidbodies: Rigidbody[] = hips.GetComponentsInChildren<Rigidbody>(includeInactive: true);
+        //ragdollRigidbodies = allRigidbodies.Where(r => r != rb).ToArray();
         ragdollColliders = hips.GetComponentsInChildren<Collider>(includeInactive: true).Where(c => c != rootCollider).ToArray();
 
         SetAnimateState(true);
     }
 
-    private void SetAnimateState(bool state) 
+    public void SetAnimateState(bool state) 
     {
         isRagdoll = state;
         animator.enabled = state;
@@ -62,7 +62,7 @@ public class RagdollController : MonoBehaviour
         if (rb != null) 
         {
             rb.isKinematic = true;
-            rb.velocity = Vector3.zero;
+            rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
         }
         foreach (var r in ragdollRigidbodies) 
