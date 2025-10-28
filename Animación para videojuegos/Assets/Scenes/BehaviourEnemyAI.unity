@@ -715,6 +715,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterHackNSlash
       objectReference: {fileID: 0}
+    - target: {fileID: 3415553950129129452, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4141595223567486898, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_Enabled
       value: 0
