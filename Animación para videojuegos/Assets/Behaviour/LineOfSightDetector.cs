@@ -13,6 +13,11 @@ public class LineOfSightDetector : MonoBehaviour
 
     public GameObject PerformDetection(GameObject potentialTarget)
     {
+        
+        if (potentialTarget == null)
+        {
+            return null;
+        }
         RaycastHit hit;
         Vector3 direction = potentialTarget.transform.position - transform.position;
         Physics.Raycast(transform.position + Vector3.up * m_detectionHeight,
@@ -20,6 +25,7 @@ public class LineOfSightDetector : MonoBehaviour
 
         if (hit.collider != null && hit.collider.gameObject == potentialTarget)
         {
+            Debug.Log("[PD]Line of sight to " + potentialTarget.name + " confirmed.");
             if (showDebugVisuals && this.enabled)
             {
                 Debug.DrawLine(transform.position + Vector3.up * m_detectionHeight,
@@ -29,6 +35,7 @@ public class LineOfSightDetector : MonoBehaviour
         }
         else
         {
+            Debug.Log("[PD]Line of sight to " + potentialTarget.name + " blocked.");
             return null;
         }
     }

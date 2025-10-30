@@ -14,7 +14,7 @@ public partial class RangeDetectorAction : Action
     protected override Status OnUpdate()
     {
         Target.Value = Range_Detector.Value.UpdateDetector();
-        return Target.Value != null ? Status.Failure : Status.Success;
+        return Target.Value == null ? Status.Failure : Status.Success;
     }
 }
 

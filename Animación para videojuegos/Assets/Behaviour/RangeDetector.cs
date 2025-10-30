@@ -17,7 +17,7 @@ public class RangeDetector : MonoBehaviour
     {
         // Perform sphere check
         Collider[] colliders = Physics.OverlapSphere(transform.position, detectionRadius, detectionMask);
-
+        
         if (colliders.Length > 0)
         {
             DetectedTarget = colliders[0].gameObject;
