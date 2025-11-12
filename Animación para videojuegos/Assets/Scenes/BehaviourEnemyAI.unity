@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 249248778}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.41, y: 0.865961, z: 1.1164167}
+  m_LocalPosition: {x: -13.41, y: 0.865961, z: -3.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3415553950129129452, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_Layer
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4141595223567486898, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_Enabled
@@ -730,6 +730,10 @@ PrefabInstance:
     - target: {fileID: 5636903260835239073, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: rb
       value: 
+      objectReference: {fileID: 1701598447}
+    - target: {fileID: 6637585788474200851, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_Constraints
+      value: 116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -764,7 +768,7 @@ Transform:
   m_GameObject: {fileID: 933398517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.865961, z: 7.93}
+  m_LocalPosition: {x: 0.07, y: 0.865961, z: 1.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -899,7 +903,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1152
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -910,7 +914,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 345a1426bd425c646a5a90944298aba8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 20086a31cde5bd141b93a35e2fdd59fa, type: 2}
   m_BuildHeightMesh: 0
 --- !u!1 &1152590747
 GameObject:
@@ -1135,7 +1139,7 @@ Transform:
   m_GameObject: {fileID: 1290782786}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.15, y: 1.23, z: 4.93}
+  m_LocalPosition: {x: -8.15, y: 1.15, z: 4.93}
   m_LocalScale: {x: 0.4909995, y: 2.93669, z: 5.891575}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1445,8 +1449,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   m_detectionRange: 10
-  m_detectionHeight: 3
+  m_detectionHeight: 1.75
   showDebugVisuals: 1
+--- !u!54 &1701598447 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 6637585788474200851, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+  m_PrefabInstance: {fileID: 784742650}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702311048
 GameObject:
   m_ObjectHideFlags: 0
