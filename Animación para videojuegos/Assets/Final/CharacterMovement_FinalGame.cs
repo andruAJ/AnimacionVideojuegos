@@ -10,7 +10,6 @@ namespace GA.Sessions.Class_03.Scripts
         [SerializeField] private FloatDamper speedY;
         [SerializeField] private float angularSpeed;
         [SerializeField] private Camera camera;
-        private Quaternion targetRotation;
 
 
         private int _speedXHash;
