@@ -47,7 +47,7 @@ public class CharacterState : MonoBehaviour, IPlayerStats
         zeroHealth = false;
         if (_currentHealth <= 0) 
         {
-            zeroHealth = true;
+            GameManager.Instance.GameOver();
         }
     }
 
