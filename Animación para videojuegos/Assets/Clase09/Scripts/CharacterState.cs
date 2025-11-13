@@ -1,14 +1,32 @@
 using UnityEngine;
 
-public class CharacterState : MonoBehaviour
+public interface IPlayerStats {
+    float Speed { get; }
+    float MaxHealth { get; }
+    float Damage { get; }
+    float CurrentStamine { get; }
+}
+
+public class CharacterState : MonoBehaviour, IPlayerStats
 {
-    [SerializeField] public float _startStamina = 1000;
+    [Header("Stamina")]
+    [SerializeField] private float _startStamina = 1000;
     [SerializeField] public float _staminaRegen = 1;
     [SerializeField] public float _currentStamina = 1000;
+
+    [Header("Health")]
     [SerializeField] public float _startHealth = 100;
     [SerializeField] public float _currentHealth = 100;
 
+    [Header("Speed")]
+    [SerializeField] private float _baseSpeed = 5f;
+
+    [Header("Damage")]
+    [SerializeField] private float _baseDamage = 10f;
     public float CurrentStamine => _currentStamina;
+    public float Speed => _baseSpeed;       
+    public float MaxHealth => _startHealth;
+    public float Damage => _baseDamage;
 
     private void RegenerateStamina(float regenAmount) 
     {
