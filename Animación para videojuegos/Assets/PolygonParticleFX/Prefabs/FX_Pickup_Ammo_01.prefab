@@ -4914,6 +4914,7 @@ GameObject:
   - component: {fileID: 4903591308292106}
   - component: {fileID: 198566955500219250}
   - component: {fileID: 199536504798512130}
+  - component: {fileID: 3514079750744352348}
   m_Layer: 1
   m_Name: FX_Pickup_Ammo_01
   m_TagString: Untagged
@@ -9746,6 +9747,19 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &3514079750744352348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163771896122142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f3986025c3c384682b570f6cfbe3fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
 --- !u!1 &1289803115217724
 GameObject:
   m_ObjectHideFlags: 0

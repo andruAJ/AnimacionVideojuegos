@@ -3288,6 +3288,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 342879347223026048, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1590429674}
+    - targetCorrespondingSourceObject: {fileID: 342879347223026048, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590429676}
+    - targetCorrespondingSourceObject: {fileID: 342879347223026048, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590429675}
   m_SourcePrefab: {fileID: 100100000, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
 --- !u!4 &784742651 stripped
 Transform:
@@ -4797,6 +4803,37 @@ MonoBehaviour:
     _smoothTime: 0
   angularSpeed: 0
   camera: {fileID: 1702311050}
+--- !u!114 &1590429675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590429660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f06cb34f7ff1cc42bd2089fd8bd257e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startStamina: 1000
+  _staminaRegen: 1
+  _currentStamina: 1000
+  _startHealth: 100
+  _currentHealth: 100
+  _baseSpeed: 5
+  _baseDamage: 10
+--- !u!114 &1590429676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590429660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de23526fe18db5a4e9dda204702eb966, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1609992547
 PrefabInstance:
   m_ObjectHideFlags: 0
