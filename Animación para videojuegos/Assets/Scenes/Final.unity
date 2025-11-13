@@ -3910,6 +3910,10 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 1701598447}
+    - target: {fileID: 5982886383444047081, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: ignoreDamage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6114784141059309977, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.14966106
@@ -45615,10 +45619,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 3116021845387428176, guid: b55f9d27337714b4b8861770362e2bec, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5177762979385322163, guid: b55f9d27337714b4b8861770362e2bec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.6
@@ -45675,10 +45675,6 @@ PrefabInstance:
     - target: {fileID: 1797150722126738863, guid: 6114b4667b1bcdf4abf16c681e128506, type: 3}
       propertyPath: m_Name
       value: Enemy2Werewolf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1797150722126738863, guid: 6114b4667b1bcdf4abf16c681e128506, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3964210059930992807, guid: 6114b4667b1bcdf4abf16c681e128506, type: 3}
       propertyPath: managedReferences[1139647415379034861].m_Value
