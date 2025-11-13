@@ -21,6 +21,9 @@ public class PowerUpPickUp : MonoBehaviour
             case PowerUpType.RandomOne:
                 powerUpManager.ApplyRandomPowerUp();
                 break;
+            case PowerUpType.Stamina:
+                powerUpManager.ApplyStaminaPowerUp();
+                break;
         }
 
         Destroy(gameObject);

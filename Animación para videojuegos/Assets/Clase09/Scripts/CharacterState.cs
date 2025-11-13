@@ -10,7 +10,7 @@ public interface IPlayerStats {
 public class CharacterState : MonoBehaviour, IPlayerStats
 {
     [Header("Stamina")]
-    [SerializeField] private float _startStamina = 1000;
+    [SerializeField] public float _startStamina = 1000;
     [SerializeField] public float _staminaRegen = 1;
     [SerializeField] public float _currentStamina = 1000;
 
@@ -19,10 +19,10 @@ public class CharacterState : MonoBehaviour, IPlayerStats
     [SerializeField] public float _currentHealth = 100;
 
     [Header("Speed")]
-    [SerializeField] private float _baseSpeed = 5f;
+    [SerializeField] public float _baseSpeed = 5f;
 
     [Header("Damage")]
-    [SerializeField] private float _baseDamage = 10f;
+    [SerializeField] public float _baseDamage = 10f;
     public float CurrentStamine => _currentStamina;
     public float Speed => _baseSpeed;       
     public float MaxHealth => _startHealth;
