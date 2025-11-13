@@ -2636,11 +2636,11 @@ MonoBehaviour:
   meleePrefab: {fileID: 841415002505913246, guid: 548b822d5f114ea42af11715e714f1a4, type: 3}
   rangedPrefab: {fileID: 8661138159419164400, guid: a71abf87049cc2143aac0ec8efea6d52, type: 3}
   spawnPoints:
-  - {fileID: 1816432885}
-  - {fileID: 441263532}
+  - {fileID: 249248779}
+  - {fileID: 933398518}
   playerTarget: {fileID: 750466200198216293}
   baseEnemiesPerWave: 3
-  timeBetweenWaves: 3
+  timeBetweenWaves: 10
   speedStepPerWave: 0.1
   damageStepPerWave: 0.1
 --- !u!4 &1539147367
