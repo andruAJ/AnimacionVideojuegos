@@ -51,7 +51,8 @@ public class DamageController : MonoBehaviour
 
         if (isDead) 
         {
-            animator.SetTrigger("Die");   
+            animator.SetTrigger("Die");
+            GameManager.Instance.GameOver();
         }
         damageList.Clear();
     }
