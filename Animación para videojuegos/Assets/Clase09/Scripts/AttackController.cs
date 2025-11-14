@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 [RequireComponent(typeof(Animator))]
 public class AttackController : MonoBehaviour
@@ -10,6 +12,9 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float heavyCost = 3.5f;
     [SerializeField] private float rotationSpeed = 500f;
     [SerializeField] private float deadZone = 0.2f;
+    [SerializeField] private PlayableDirector director;
+    [SerializeField] private TimelineClip charge;
+    [SerializeField] private TimelineClip release;
     private float rotateInput;
     private Animator animator;
     private AttackHitboxController hitboxController;
