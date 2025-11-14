@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerUpPickUp : MonoBehaviour
 {
     [SerializeField] GameObject gameObjectUI;
     public PowerUpType type;
+    [SerializeField] Slider playerSlider;
 
     private void OnTriggerEnter(Collider other) {
         var powerUpManager = other.GetComponent<PlayerPowerUpManager>();
@@ -16,6 +18,7 @@ public class PowerUpPickUp : MonoBehaviour
                 break;
             case PowerUpType.Health:
                 powerUpManager.ApplyHealthPowerUp(25f);
+                playerSlider.value += 25f;
                 break;
             case PowerUpType.Damage:
                 powerUpManager.ApplyDamagePowerUp(10f);

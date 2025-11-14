@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
             gameOverUI.SetActive(true);
         AudioManager.Instance.PlaySFX(AudioManager.Instance.gameOver);
 
-        Time.timeScale = 0f;
+        Time.timeScale = 0.5f;
     }
     public void ResetScene()
     {
