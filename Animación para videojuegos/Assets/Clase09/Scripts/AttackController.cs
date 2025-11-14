@@ -14,7 +14,10 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float deadZone = 0.2f;
     [SerializeField] private PlayableDirector director;
     [SerializeField] private PlayableAsset charge;
+    [SerializeField] private PlayableAsset continued_release;
     [SerializeField] private PlayableAsset release;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip explosion;
     private float rotateInput;
     private Animator animator;
     private AttackHitboxController hitboxController;
@@ -44,8 +47,12 @@ public class AttackController : MonoBehaviour
             AudioManager.Instance.PlaySFX(AudioManager.Instance.sword);
             animator.SetTrigger("HeavyAttack");
             director.playableAsset = ctx.performed ? charge : release;
-            if (director.playableAsset == charge) director.extrapolationMode = DirectorWrapMode.Loop;
+            if (director.playableAsset == charge) { director.playableAsset = continued_release; director.extrapolationMode = DirectorWrapMode.Loop; }
             else director.extrapolationMode = DirectorWrapMode.None;
+            if (director.playableAsset == release) 
+            {
+                audioSource.PlayOneShot(explosion);
+            }
             director.Play();
         }        
         //if (Game.Instance.PlayerOne.CurrentStamine > 0)
