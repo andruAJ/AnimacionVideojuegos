@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,7 +26,12 @@ public class GameManager : MonoBehaviour
 
         if (gameOverUI != null)
             gameOverUI.SetActive(true);
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.gameOver);
 
         Time.timeScale = 0f;
+    }
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }

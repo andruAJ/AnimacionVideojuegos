@@ -29,6 +29,7 @@ public class AttackController : MonoBehaviour
         if (ctx.performed)
             if (Game.Instance.PlayerOne.CurrentStamine > 0) {
                 Game.Instance.PlayerOne.DepletStamina(lightCost);
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.sword);
                 animator.SetTrigger("Attack");
             }
         
@@ -40,6 +41,7 @@ public class AttackController : MonoBehaviour
         {
             Game.Instance.PlayerOne.DepletStamina(heavyCost);
             Debug.Log("Heavy Attack Performed");
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.sword);
             animator.SetTrigger("HeavyAttack");
         }        
         //if (Game.Instance.PlayerOne.CurrentStamine > 0)
