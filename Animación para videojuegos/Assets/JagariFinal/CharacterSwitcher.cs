@@ -46,7 +46,7 @@ public class CharacterSwitcher : MonoBehaviour
         switchAction.action.Disable();
     }
 
-    private void OnSwitchPerformed(InputAction.CallbackContext ctx)
+    public void OnSwitchPerformed(InputAction.CallbackContext ctx)
     {
         SwitchCharacter();
     }

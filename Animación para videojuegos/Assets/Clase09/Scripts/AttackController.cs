@@ -13,8 +13,8 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float rotationSpeed = 500f;
     [SerializeField] private float deadZone = 0.2f;
     [SerializeField] private PlayableDirector director;
-    [SerializeField] private TimelineClip charge;
-    [SerializeField] private TimelineClip release;
+    [SerializeField] private PlayableAsset charge;
+    [SerializeField] private PlayableAsset release;
     private float rotateInput;
     private Animator animator;
     private AttackHitboxController hitboxController;
@@ -43,6 +43,10 @@ public class AttackController : MonoBehaviour
             Debug.Log("Heavy Attack Performed");
             AudioManager.Instance.PlaySFX(AudioManager.Instance.sword);
             animator.SetTrigger("HeavyAttack");
+            director.playableAsset = ctx.performed ? charge : release;
+            if (director.playableAsset == charge) director.extrapolationMode = DirectorWrapMode.Loop;
+            else director.extrapolationMode = DirectorWrapMode.None;
+            director.Play();
         }        
         //if (Game.Instance.PlayerOne.CurrentStamine > 0)
         //{
