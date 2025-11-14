@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class PowerUpPickUp : MonoBehaviour
 {
+    [SerializeField] GameObject gameObjectUI;
     public PowerUpType type;
 
     private void OnTriggerEnter(Collider other) {
         var powerUpManager = other.GetComponent<PlayerPowerUpManager>();
         if (powerUpManager == null) return;
-
+        gameObjectUI.SetActive(true);
         switch (type) {
             case PowerUpType.Speed:
                 powerUpManager.ApplySpeedPowerUp(1.5f);

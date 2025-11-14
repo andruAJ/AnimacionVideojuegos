@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public interface IPlayerStats {
     float Speed { get; }
@@ -28,6 +29,7 @@ public class CharacterState : MonoBehaviour, IPlayerStats
     public float MaxHealth => _startHealth;
     public float Damage => _baseDamage;
 
+    [SerializeField] Slider slider;
     private void RegenerateStamina(float regenAmount) 
     {
         _currentStamina = Mathf.Min(_currentStamina + regenAmount, _startStamina);
@@ -43,6 +45,7 @@ public class CharacterState : MonoBehaviour, IPlayerStats
 
     public void DepleteHealth(float healthDepletion, out bool zeroHealth) 
     {
+        slider.value = healthDepletion;
         _currentHealth -= healthDepletion;
         zeroHealth = false;
         if (_currentHealth <= 0) 
@@ -55,6 +58,7 @@ public class CharacterState : MonoBehaviour, IPlayerStats
     {
         _currentStamina = _startStamina;
         _currentHealth = _startHealth;
+        slider.value = _currentHealth;
     }
     private void Update()
     {
