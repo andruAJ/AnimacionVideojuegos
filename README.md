@@ -1,68 +1,76 @@
-# Entrega3 - Controlador ARPG con combos direccionales
+# Entrega Final - Hack n Slash ARPG con Power Ups (Patrón Decorator)
 
-Implementación de un sistema de **combos direccionales** que responde a la orientación del joystick y a secuencias de entrada, respetando ventanas de encadenado y criterios de suavidad.
-
-## Demo
-
-## ![](gifCombos.gif)
-
-## Objetivo y alcance
-
-**Objetivo.** Construir un sistema de combos direccionales completo donde cada eslabón del combo depende de la dirección actual del stick y de secuencias direccionales, coexistiendo con las ventanas de encadenado.
-
-**Alcance mínimo.**
-
-- Direccionalidad para todos los ataques controlada por joystick
-- Encadenado dependiente de ventanas de tiempo
-- Respeto por las curvas de desplazamiento en cada eslabón para no “teletransportarse” al salir de ventana
-- Deadzone para evitar jitter
-- Criterios de diseño claros: deadzone, histéresis, buffers y resolución de conflictos
-- Sin regresiones: nada de soft-locks, bucles infinitos o pérdida de control
+Demo jugable tipo hack n slash construida sobre el controlador ARPG visto en clase.  
+El objetivo es mostrar un sistema de oleadas infinitas, cambio de personaje, combate ARPG y power ups implementados con el patrón de diseño **Decorator**, integrando control, animación, IA y diseño modular.
 
 ---
 
-## Controles
+## Objetivo de la entrega
 
-### Gamepad
+Construir una demo jugable tipo hack n slash utilizando el controlador ARPG del curso, con:
 
-- **Light Attack**: `RB`
-- **Heavy Attack**: `RT`
-- **Rotación libre**: `Joystick derecho`
+- Sistema de oleadas infinitas de enemigos.
+- Capacidad de intercambiar personajes jugables en tiempo real.
+- Combate ARPG funcional con ataques, combos y detección de daño.
+- Power ups recolectables implementados mediante el patrón Decorator.
+- UI mínima que permita entender el estado del jugador y del combate.
 
-### Teclado
-
-- **Orientación direccional para ataques**: `rightStick` (eje X e Y)
-- **Light Attack**: (Mouse 0)
-- **Heavy Attack**: (Mouse 1)
-- **Rotación continua**: `Q` (gira a la izquierda) y `E` (gira a la derecha)
+El foco del proyecto es demostrar una arquitectura limpia y extensible que se pueda ampliar sin modificar la lógica base del jugador.
 
 ---
 
-## Arquitectura del código
+## Alcance mínimo implementado
 
-> Nombres de scripts pensados para esta clase. Ajusta si tus archivos difieren.
+### 1. Oleadas infinitas
 
-- **`AttackController.cs`**  
-  Orquesta entradas de ataque, ventanas de encadenado y el enrutamiento por dirección actual. Expone callbacks de Input System como `OnLightAttack`, `OnHeavyAttack`, `RotatePlayer`.
+- Spawner de enemigos con generación progresiva.  
+- Al menos dos tipos de enemigo con comportamientos diferenciados.  
+- Incremento gradual de dificultad (por ejemplo número de enemigos, velocidad o daño).  
+- Condición de Game Over cuando la vida del jugador llega a cero.
 
-- **`ComboLogic Animator`** 
-   Un árbol con capas y  submáquinas por **tipo de ataque**. Cada clip define eventos que abren y cierran ventanas de encadenado.
+### 2. Intercambio de personajes
 
-### Lectura continua del eje de rotación
+- Al menos dos personajes jugables basados en el controlador ARPG del curso.  
+- Cambio de personaje en tiempo real durante la partida.  
+- Cada personaje conserva sus propios atributos de vida, daño y velocidad.
 
-Ejemplo mínimo para mantener rotación mientras la tecla o stick siga presionado:
+### 3. Combate ARPG
 
-```csharp
-[SerializeField] Transform character;
-[SerializeField] float rotationSpeed = 500f;
-[SerializeField] InputActionReference rotateAction; // 1D Axis y rightStick/x
+- Ataques básicos y pesados con animaciones sincronizadas.  
+- Detección de impacto sobre enemigos.  
+- Enemigos que persiguen y atacan activamente al jugador.  
+- Muerte del jugador que dispara Game Over o reinicio de oleadas.
 
-void OnEnable() => rotateAction.action.Enable();
-void OnDisable() => rotateAction.action.Disable();
+### 4. Sistema de power ups con patrón Decorator
 
-void Update() {
-    float input = rotateAction.action.ReadValue<float>(); // -1..1
-    if (Mathf.Abs(input) > 0.001f)
-        character.Rotate(0f, input * rotationSpeed * Time.deltaTime, 0f, Space.Self);
-}
-```
+- Power ups recolectables en el escenario.  
+- Al recogerlos se aplica un efecto temporal o acumulable sobre el jugador.  
+- Implementación basada en una interfaz o clase base de estadísticas y decoradores que extienden su comportamiento sin modificar la clase base.  
+- Feedback visual o sonoro para cada power up activo o recogido.
+
+### 5. Interfaz mínima
+
+- Barra de vida del jugador.  
+- Contador de oleadas y/o enemigos derrotados.  
+- Indicador visible de power ups activos y su duración aproximada.
+
+---
+
+## Estructura del proyecto
+
+- Rama de trabajo recomendada: `entrega-final`  
+- Carpeta principal de la demo: `Assets/EntregaFinal`  
+  - Escenas de juego.  
+  - Prefabs de jugador, enemigos y power ups.  
+  - Scripts de oleadas, combate, power ups y UI.
+
+Ajusta estos nombres si tu estructura final difiere.
+
+---
+
+## Cómo ejecutar la demo
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone https://github.com/andruAJ/AnimacionVideojuegos.git
