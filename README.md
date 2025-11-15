@@ -28,7 +28,7 @@ El foco del proyecto es demostrar una arquitectura limpia y extensible que se pu
 - Incremento gradual de dificultad (por ejemplo número de enemigos, velocidad o daño).  
 - Condición de Game Over cuando la vida del jugador llega a cero.
 
-### 2. Intercambio de personajes
+### 2. Intercambio de personajes (desactivado)
 
 - Al menos dos personajes jugables basados en el controlador ARPG del curso.  
 - Cambio de personaje en tiempo real durante la partida.  
@@ -58,19 +58,25 @@ El foco del proyecto es demostrar una arquitectura limpia y extensible que se pu
 
 ## Estructura del proyecto
 
-- Rama de trabajo recomendada: `entrega-final`  
-- Carpeta principal de la demo: `Assets/EntregaFinal`  
+- Rama de trabajo recomendada: `main`  
+- Carpeta principal de la demo: `Assets/EjercicioFinal`  
   - Escenas de juego.  
   - Prefabs de jugador, enemigos y power ups.  
-  - Scripts de oleadas, combate, power ups y UI.
+  - Scripts de oleadas, combate, VFX y UI.
 
 Ajusta estos nombres si tu estructura final difiere.
 
 ---
 
-## Cómo ejecutar la demo
+## Videos VFX
 
-1. Clonar el repositorio:
+1. Pick Ups:
 
-   ```bash
-   git clone https://github.com/andruAJ/AnimacionVideojuegos.git
+
+ 
+2. Ataque cargado:
+
+
+
+3. Ataque rápido:
+
