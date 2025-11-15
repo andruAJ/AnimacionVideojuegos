@@ -11,6 +11,13 @@ El objetivo es mostrar un sistema de oleadas infinitas, cambio de personaje, com
 
 ---
 
+# Controles:
+
+  WASD - Movimiento
+  QE - Rotación
+  Click Izq. - Ataque rápido
+  Click Der. - Ataque Pesado
+
 ## Objetivo de la entrega
 
 Construir una demo jugable tipo hack n slash utilizando el controlador ARPG del curso, con:
