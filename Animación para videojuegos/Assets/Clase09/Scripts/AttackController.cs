@@ -16,6 +16,7 @@ public class AttackController : MonoBehaviour
     [SerializeField] private PlayableAsset charge;
     [SerializeField] private PlayableAsset continued_release;
     [SerializeField] private PlayableAsset release;
+    [SerializeField] private PlayableAsset quickAttack;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip explosion;
     private float rotateInput;
@@ -34,6 +35,8 @@ public class AttackController : MonoBehaviour
                 Game.Instance.PlayerOne.DepletStamina(lightCost);
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.sword);
                 animator.SetTrigger("Attack");
+                director.playableAsset = quickAttack;
+                director.Play();
             }
         
     }

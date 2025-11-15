@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8637948312955151360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209478244925364570}
+  - component: {fileID: 3927579271229289021}
+  - component: {fileID: 8007404209518054147}
+  - component: {fileID: 2555042354179003890}
+  m_Layer: 0
+  m_Name: DirectorJR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1209478244925364570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637948312955151360}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2490675, y: 2.1300027, z: -2.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &3927579271229289021
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637948312955151360}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: d65eadefdc0f6fd43be2e30a5fe6b96d, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5828237818365684712, guid: d65eadefdc0f6fd43be2e30a5fe6b96d, type: 2}
+    value: {fileID: 2555042354179003890}
+  - key: {fileID: 3846801751651892042, guid: d65eadefdc0f6fd43be2e30a5fe6b96d, type: 2}
+    value: {fileID: 2555042354179003890}
+  - key: {fileID: 2194695121515579055, guid: d65eadefdc0f6fd43be2e30a5fe6b96d, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References:
+    - 950600a5854b9db4eabb6d3b61c4f2ca: {fileID: 0}
+    - 8070071cb9838bf468a302d1d1523b98: {fileID: 0}
+    - 353125e4bfd92b941b3b1dbfd005b92f: {fileID: 0}
+    - f528f93217cc9e14b9d45dd6bc0dc477: {fileID: 0}
+    - a3456ddc942db494b82c1bd3db3738d9: {fileID: 0}
+    - 21ce7ae521b168f44a2432041cea35e1: {fileID: 0}
+--- !u!114 &8007404209518054147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637948312955151360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44a2b5b130793346ba1af9f342adf80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timelineTime: 0
+  postProcessMat: {fileID: 2100000, guid: a401ef531becb3a4ea205886f516868d, type: 2}
+  timeSourceMaterial: {fileID: 2100000, guid: efb8e9fef615d9840897563f5b893608, type: 2}
+  materialsToReset:
+  - {fileID: 2100000, guid: c2c25256adb707d4d92d4126918c5e19, type: 2}
+  - {fileID: 2100000, guid: fc33d1f770223634c99d796e649092cb, type: 2}
+--- !u!114 &2555042354179003890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637948312955151360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 20513b8915f83b1448f61ca7c1582de9, type: 2}
+    - {fileID: 11400000, guid: 3ed9519e84224f5499a27c5c5cf9e014, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8007404209518054147}
+          m_TargetAssemblyTypeName: ShaderTimelineController, Assembly-CSharp
+          m_MethodName: StartShader
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8007404209518054147}
+          m_TargetAssemblyTypeName: ShaderTimelineController, Assembly-CSharp
+          m_MethodName: ReSetVignette
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
