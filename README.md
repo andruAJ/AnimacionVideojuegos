@@ -1,3 +1,9 @@
+# Equipos e integrantes:
+
+  Animación para videojuegos: Andrés Juan Giraldo Vargas, Juan Guillermo Caicedo, Gustavo Adolfo Lora, Juan Andrés Gaviria.
+
+  Computación Gráfica: Andrés Juan Giraldo Vargas y Jacobo Rodríguez. 
+
 # Entrega Final - Hack n Slash ARPG con Power Ups (Patrón Decorator)
 
 Demo jugable tipo hack n slash construida sobre el controlador ARPG visto en clase.  
