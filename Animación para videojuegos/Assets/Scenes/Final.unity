@@ -3883,11 +3883,11 @@ PrefabInstance:
       objectReference: {fileID: 1702311050}
     - target: {fileID: 3766933954328686027, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_DefaultActionMap
-      value: GamePad
+      value: Character JRPG
       objectReference: {fileID: 0}
     - target: {fileID: 3766933954328686027, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3766933954328686027, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionId
@@ -19595,13 +19595,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2628067945449493639, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757529326495094207, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2757529326495094207, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281763450971943857, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.0899999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281763450971943857, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1300001
+      objectReference: {fileID: 0}
     - target: {fileID: 5406349893650744549, guid: 382db4c94be87bb47b8a305141320531, type: 3}
       propertyPath: m_Name
       value: QuickSlashVFX
       objectReference: {fileID: 0}
     - target: {fileID: 5406349893650744549, guid: 382db4c94be87bb47b8a305141320531, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145310624344081860, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245151002098980766, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6588678355744204458, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589053712577890385, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8589053712577890385, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1795363
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181354332140116001, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181354332140116001, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181354332140116001, guid: 382db4c94be87bb47b8a305141320531, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
