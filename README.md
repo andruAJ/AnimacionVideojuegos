@@ -2,7 +2,7 @@
 
   Animación para videojuegos: Andrés Juan Giraldo Vargas, Juan Guillermo Caicedo, Gustavo Adolfo Lora, Juan Andrés Gaviria.
 
-  Computación Gráfica: Andrés Juan Giraldo Vargas, Jacobo Rodríguez, Daniel García. 
+  Computación Gráfica: Andrés Juan Giraldo Vargas y Jacobo Rodríguez. 
 
 # Entrega Final - Hack n Slash ARPG con Power Ups (Patrón Decorator)
 
