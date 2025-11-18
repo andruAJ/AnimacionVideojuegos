@@ -12,6 +12,7 @@ public class AttackHitBox : MonoBehaviour
         var damageHitBox = other.GetComponent<EnemyDamageHitBox>();
         if (damageHitBox != null)
         {
+            Debug.Log("[AHB]Found DamageHitBox component, sending damage message.");
             DamageMessage message = new DamageMessage
             {
                 sender = sender != null ? sender : gameObject,
