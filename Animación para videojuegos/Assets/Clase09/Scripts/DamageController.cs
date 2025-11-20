@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using UnityEngine.UI;
 
 
 public class DamageController : MonoBehaviour
@@ -10,7 +11,7 @@ public class DamageController : MonoBehaviour
     private List<DamageMessage> damageList = new List<DamageMessage>();
 
     [SerializeField] private bool ignoreDamage;
-
+    [SerializeField] private Slider playerHealth;
     private Animator animator;
 
     public void EnqueueDamage(DamageMessage damage) 
@@ -41,6 +42,7 @@ public class DamageController : MonoBehaviour
             Game.Instance.PlayerOne.DepleteHealth(message.amount, out isDead);
             damageDirection += (message.sender.transform.position - transform.position).normalized;
             damageLevel = Mathf.Max(damageLevel, (int)message.damageLevel);
+            playerHealth.value -= message.amount;
         }
         if(damageList.Count == 0) return;
         damageDirection = Vector3.ProjectOnPlane(damageDirection.normalized, Vector3.up);
@@ -48,6 +50,7 @@ public class DamageController : MonoBehaviour
         animator.SetFloat("DamageDirection", ((damageAngle/180)*0.5f+0.5f));
         animator.SetInteger("DamageLevel", damageLevel);
         animator.SetTrigger("Damage");
+        
 
         if (isDead) 
         {

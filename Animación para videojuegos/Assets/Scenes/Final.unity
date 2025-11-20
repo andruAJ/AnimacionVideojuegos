@@ -1186,6 +1186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterHackNSlash
       objectReference: {fileID: 0}
+    - target: {fileID: 5982886383444047081, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 519725384}
     - target: {fileID: 6893162652830676207, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: director
       value: 
@@ -38786,6 +38790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ignoreDamage: 0
+  playerHealth: {fileID: 0}
 --- !u!136 &7283194982721686605
 CapsuleCollider:
   m_ObjectHideFlags: 0
