@@ -1182,14 +1182,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3344225997963355470, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3415553950129129452, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: m_Name
       value: CharacterHackNSlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690183011325900076, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872243125234227043, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5982886383444047081, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 519725384}
+    - target: {fileID: 6681914351955748439, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6870612286417302541, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6893162652830676207, guid: 05d15eb9862ea3d4a9260c61a08b8fcf, type: 3}
       propertyPath: director
       value: 
