@@ -39,7 +39,6 @@ public class ShaderTimelineController : MonoBehaviour
 
         shaderActive = true;
         timelineTime = externalTime;   // iniciar desde el valor existente
-        Debug.Log("Shader START signal received!");
         SetDefaultVignette();
     }
 
@@ -88,7 +87,6 @@ public class ShaderTimelineController : MonoBehaviour
                 if (mat.HasProperty(TimelineTimeProp)) mat.SetFloat(TimelineTimeProp, 0f);
             }
         }
-        Debug.Log("Shader RESET signal received!");
     }
 
     void Update()
